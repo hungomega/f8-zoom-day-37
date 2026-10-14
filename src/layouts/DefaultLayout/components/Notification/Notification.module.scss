@@ -1,0 +1,63 @@
+.logo {
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.logo > p {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 350px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #ddd;
+    z-index: 10;
+}
+
+.sectionTitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.item:hover {
+    background: #f5f5f5;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+}
+
+.content h4 {
+    margin: 0 0 5px;
+    font-size: 14px;
+}
+
+.content p {
+    margin: 0;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}

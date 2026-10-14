@@ -1,0 +1,20 @@
+.goToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darkorange;
+    }
+}

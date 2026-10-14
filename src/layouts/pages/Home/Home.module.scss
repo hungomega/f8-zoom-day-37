@@ -1,0 +1,38 @@
+.home {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: 32px;
+        color: #333;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        display: block;
+        padding: 16px 20px;
+        background-color: #fff;
+        color: #2563eb;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        transition: 0.2s;
+    }
+
+    a:hover {
+        background-color: #2563eb;
+        color: #fff;
+        transform: translateY(-2px);
+    }
+}

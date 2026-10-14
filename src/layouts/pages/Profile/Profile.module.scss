@@ -1,0 +1,35 @@
+.defaultImg {
+    width: 200px;
+    height: 200px;   
+    object-fit: cover;
+}
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.uploadLabel {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fileInput {
+    display: none;
+}
+
+.defaultImg {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+.overview h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.overview p {
+    margin-top: 10px;
+    font-size: 18px;
+}
