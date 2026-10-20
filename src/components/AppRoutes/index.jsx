@@ -4,6 +4,11 @@ import Home from "../../layouts/pages/Home";
 import Profile from "../../layouts/pages/Profile";
 import ModalDemo from "../../layouts/pages/ModalDemo";
 import ScrollDemo from "../../layouts/pages/ScrollDemo";
+import PerformanceDemo from "../../layouts/pages/PerformanceDemo";
+import FocusDemo from "../../layouts/pages/FocusDemo";
+import HOCDemo from "../../layouts/pages/HOCDemo";
+import RenderPropsDemo from "../../layouts/pages/RenderPropsDemo";
+import CustomHooksDemo from "../../layouts/pages/CustomHooksDemo";
 function AppRoutes() {
     return (
         <>
@@ -44,9 +49,53 @@ function AppRoutes() {
                         </>
                     }
                 />
-               
-                {/* <Route path="/" element={<SearchForm />}></Route> */}
-            </Routes>
+                <Route
+                    path="/performance-demo"
+                    element={
+                        <>
+                            <Header />
+                            <PerformanceDemo />
+                        </>
+                    }
+                />
+
+                <Route
+                    path="/focus-demo"
+                    element={
+                        <>
+                            <Header />
+                            <FocusDemo />
+                        </>
+                    }
+                />
+                <Route
+                    path="/hoc-demo"
+                    element={
+                        <>
+                            <Header />
+                            <HOCDemo />
+                        </>
+                    }
+                />
+                <Route
+                    path="/render-props-demo"
+                    element={
+                        <>
+                            <Header />
+                            <RenderPropsDemo />
+                        </>
+                    }
+                />
+                <Route
+                    path="/custom-hooks-demo"
+                    element={
+                        <>
+                            <Header />
+                            <CustomHooksDemo />
+                        </>
+                    }
+                />
+            </Routes>{" "}
         </>
     );
 }

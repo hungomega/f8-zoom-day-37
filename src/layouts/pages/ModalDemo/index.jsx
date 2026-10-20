@@ -92,16 +92,16 @@ function ModalDemo() {
                         ? styles.customOverlay
                         : ""
                 }
-                onAfterOpen={() => {
-                    if (activeDemo?.callbacks) {
-                        console.log("Modal đã mở");
-                    }
-                }}
-                onAfterClose={() => {
-                    if (activeDemo?.callbacks) {
-                        console.log("Modal đã đóng");
-                    }
-                }}
+                // onAfterOpen={() => {
+                //     if (activeDemo?.callbacks) {
+                //         console.log("Modal đã mở");
+                //     }
+                // }}
+                // onAfterClose={() => {
+                //     if (activeDemo?.callbacks) {
+                //         console.log("Modal đã đóng");
+                //     }
+                // }}
             >
                 <h2>{activeDemo?.title}</h2>
                 <p>{activeDemo?.content}</p>

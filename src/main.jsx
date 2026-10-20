@@ -6,7 +6,7 @@ import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename="/f8-zoom-day-37">
             <App />
         </BrowserRouter>
     </StrictMode>,

@@ -15,29 +15,29 @@ function Modal({
     shouldCloseOnEsc = true,
     children,
 }) {
-    const [shouldRender, setShouldRender] = useState(isOpen);
-    const [isClosing, setIsClosing] = useState(false);
-    const modalRef = useRef(null);
-    const previousFocusRef = useRef(null);
-    const wasOpenRef = useRef(isOpen);
+    const [shouldRender, setShouldRender] = useState(isOpen); // shouldRender: Có render Modal vào DOM hay không
+    const [isClosing, setIsClosing] = useState(false); // isClosing	: Modal đang trong quá trình đóng hay không
+    const modalRef = useRef(null); // modalRef	Tham chiếu đến phần tử hộp Modal
+    const previousFocusRef = useRef(null); // Lưu phần tử được focus trước khi mở Modal
+    const wasOpenRef = useRef(isOpen); // Ghi nhớ Modal có mở trước đó không
 
     // Xử lý mở và đóng Modal, bao gồm animation đóng
     useEffect(() => {
         let timer;
 
         if (isOpen) {
-            wasOpenRef.current = true;
-            setShouldRender(true);
-            setIsClosing(false);
+            wasOpenRef.current = true; // Ghi nhớ Modal đang mở
+            setShouldRender(true); // Cho phép render Modal
+            setIsClosing(false); // Xóa trạng thái đang đóng
         } else if (wasOpenRef.current) {
             wasOpenRef.current = false;
             setIsClosing(true);
 
             if (closeTimeoutMS > 0) {
                 timer = setTimeout(() => {
-                    setShouldRender(false);
-                    setIsClosing(false);
-                    onAfterClose?.();
+                    setShouldRender(false); // gỡ render khỏi giao diện
+                    setIsClosing(false); // đặt lại trạng thái đóng.
+                    onAfterClose?.(); // thông báo modal đã đóng xong
                 }, closeTimeoutMS);
             } else {
                 setShouldRender(false);
@@ -58,7 +58,7 @@ function Modal({
         const body = document.body;
         const html = document.documentElement;
 
-        previousFocusRef.current = document.activeElement;
+        previousFocusRef.current = document.activeElement; // phần tử hiện đang được focus
 
         if (bodyOpenClassName) {
             body.classList.add(bodyOpenClassName);
@@ -86,7 +86,6 @@ function Modal({
             if (bodyOpenClassName) {
                 body.classList.remove(bodyOpenClassName);
             }
-
             if (htmlOpenClassName) {
                 html.classList.remove(htmlOpenClassName);
             }

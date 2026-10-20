@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./GoToTop.module.scss";
+
 function GoToTop() {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -12,6 +13,7 @@ function GoToTop() {
                 setIsVisible(false);
             }
         };
+        // mỗi khi người dùng cuộn trang thì hàm handleScroll sẽ được gọi.
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);

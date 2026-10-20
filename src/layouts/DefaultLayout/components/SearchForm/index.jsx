@@ -65,7 +65,6 @@ function SearchForm() {
     return (
         <>
             <div className={styles.logo}>
-                {/* <h1> SearchForm</h1> */}
                 <input
                     type="text"
                     placeholder="Search..."

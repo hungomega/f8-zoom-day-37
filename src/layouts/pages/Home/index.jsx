@@ -18,7 +18,22 @@ function Home() {
                 <li>
                     <Link to="/scroll-demo">ScrollDemo Page</Link>
                 </li>
-                
+                <li>
+                    <Link to="/performance-demo">Performance Page</Link>
+                </li>
+                <li>
+                    <Link to="/focus-demo">Focus Page</Link>
+                </li>
+                <li>
+                    <Link to="/hoc-demo">HOCDemo Page</Link>
+                </li>
+
+                <li>
+                    <Link to="/render-props-demo">Render Props Page</Link>
+                </li>
+                 <li>
+                    <Link to="/custom-hooks-demo">Custom Hooks Page</Link>
+                </li>
             </ul>
         </div>
     );

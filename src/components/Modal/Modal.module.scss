@@ -20,7 +20,10 @@
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
     animation: scaleIn 0.2s ease;
 }
-
+.closing {
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
